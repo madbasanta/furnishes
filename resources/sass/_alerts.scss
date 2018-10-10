@@ -1,0 +1,33 @@
+.alert {
+	position: absolute;
+	z-index: 9999;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+}
+.alert.show {
+	animation: showAlert 10s linear;
+	animation-fill-mode: forwards;
+	/*animation-play-state: paused;*/
+	/*transition: 50ms;	*/
+	display: block;
+}
+
+@keyframes showAlert {
+	0% {
+		bottom: 0;
+		opacity: 0;
+	}
+	2% {
+		bottom: 20px;
+		opacity: 1;
+	}
+	98% {
+		bottom: 20px;
+		opacity: 1;
+	}
+	100% {
+		bottom: 0;
+		opacity: 0;
+	}
+}

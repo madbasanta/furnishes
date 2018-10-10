@@ -1,0 +1,257 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import 'summernote';
+@import 'select2';
+@import 'alerts';
+
+
+.navbar-laravel {
+  background-color: #001625;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+body {
+	overflow-x: hidden;
+}
+
+main {
+	padding: 0;
+}
+
+.right-floated-nav .nav-link {
+	color: #fff !important;
+}
+
+.right-floated-nav .nav-link:hover {
+	color: $red !important;
+}
+
+a:hover {
+	color: $blue !important;
+}
+
+.text-purple {
+	color : $purple;
+}
+
+.bg-purple {
+	background-color: $purple;
+}
+
+.blur-background {
+	background: rgba(0,0,0,0.6);
+}
+
+.text-orange {
+	color: orange;
+}
+
+.offer {
+	position: absolute;
+	padding: 1px 10px;
+	background-color: lightgray;
+	color: green;
+	top: 5px;
+	right: 5px;
+	font-size: 10px;
+	z-index: 9999;
+}
+.bg-banner {
+	background-color: #e8e9ea;
+}
+
+#dark-section {
+	min-height: 80vh;
+}
+
+#dark-section .jumbotron {
+	background: url('https://picsum.photos/1200/512/?image=0') center no-repeat;
+	height: 80vh;
+	position: relative;
+}
+
+#dark-section .jumbotron .actions {
+	position: absolute;
+	z-index: 9999;
+	top: 60%;
+	width: 100%;
+	left: 0;
+	padding: 20px;
+	background: rgba(0,0,0,0.5);
+}
+
+#footer .list-unstyled li a{
+	transition: 300ms;
+	text-decoration: none;
+	color: #fff;
+}
+
+#footer .list-unstyled li a:hover{
+	color: #f8f8f8 !important;
+	text-decoration: underline;
+}
+
+.card-img {
+	position: relative;
+}
+
+.custom-card-img-overlay {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+	width: 100%;
+	background: rgba(0,0,0,0.4);
+	text-align: right;
+}
+
+/* stylish hr */
+.stylish-hr {
+	border: none !important;
+	border-bottom: 1px dotted gray !important;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+.outline-none:focus {
+	outline: none !important;
+	-webkit-box-shadow: unset !important;
+	box-shadow: unset !important;
+}
+
+.text-orangered {
+	color: orangered;
+}
+
+.btn-outline-orange {
+	background: unset;
+}
+
+.blink {
+  animation: blink 2s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.social .d-inline-block {
+	background: rgba(0,0,0,0.3);
+	height: 40px;
+	border-radius: 50%;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff !important;
+}
+.social .d-inline-block:hover {
+	color: #fff !important;
+}
+
+#footer .btn-link:not(.text-white){
+	color: #fff;
+	cursor: pointer;
+}
+
+a.btn:hover {
+	color: #fff !important;
+}
+
+.fixedElement {
+    top:0;
+    width:100%;
+    z-index:100;
+}
+
+.table-container *{
+	font-size: 0.875rem;
+}
+
+.modal-header,
+.modal-footer{
+	padding: 0.5rem;
+}
+.close:focus {
+	outline-color: transparent;
+}
+
+.modal-header {
+	background-color: $blue;
+	* {
+		color: #fff;
+	}
+}
+.modal-body {
+	background-color: #f1f8f8;
+}
+
+input:focus, select:focus, textarea:focus, button:focus, .page-link:focus  {
+	outline: none !important;
+	-webkit-box-shadow: unset !important;
+	box-shadow: unset !important;
+}
+
+.loading::before {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.4);
+    left: 0;
+    top: 0;
+    z-index: 999;
+    content: '';
+}
+
+.loading:after {
+	display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    font-size: 25px;
+    content: "\f110";
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    animation: rotateme 1.3s infinite linear;
+}
+@keyframes rotateme {
+	0%{
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100%{
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+.select2-container {
+	display : block;
+}
+
+form, label{margin-bottom: 0px;}
